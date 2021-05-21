@@ -24,5 +24,6 @@ namespace GeometricShapes
             SideC = s3;
             SideD = s4;
         }
+        public Quad() { }
     }
 }
