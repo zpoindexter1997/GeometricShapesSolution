@@ -17,5 +17,12 @@ namespace GeometricShapes
         {
             return SideA + SideB + SideC + SideD;
         }
+        public Quad(int s1, int s2, int s3, int s4)
+        {
+            SideA = s1;
+            SideB = s2;
+            SideC = s3;
+            SideD = s4;
+        }
     }
 }

@@ -17,5 +17,10 @@ namespace GeometricShapes
         {
             return Length * Width;
         }
+        public Rect(int s1, int s2)
+        {
+            Length = s1;
+            Width = s2;
+        }
     }
 }

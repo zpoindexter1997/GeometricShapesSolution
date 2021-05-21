@@ -27,19 +27,14 @@ namespace GeometricShapes
     {
         static void Main(string[] args)
         {
-            var sqr1 = new Sqr();
-            sqr1.Side = 4;
-            var rect1 = new Rect();
-            rect1.Length = 7;
-            rect1.Width = 5;
-            var quad1 = new Quad();
-            quad1.SideA = 4;
-            quad1.SideB = 6;
-            quad1.SideC = 9;
-            quad1.SideD = 2;
+            var sqr1 = new Sqr(9);
+            var rect1 = new Rect(7,2);
+            var quad1 = new Quad(4,6,1,3);
             Console.WriteLine($"The perimeter of the square is {sqr1.Perimeter()} and the area is {sqr1.Area()}");
             Console.WriteLine($"The perimeter of the rectangle is {rect1.Perimeter()} and the area is {rect1.Area()}");
             Console.WriteLine($"The perimeter of the quadrilater is {quad1.Perimeter()}");
+            var sqr2 = new Sqr2(5);
+            var rect2 = new Rect2(6, 3);
         }
     }
 }

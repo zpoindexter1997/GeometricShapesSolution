@@ -4,21 +4,20 @@ using System.Text;
 
 namespace GeometricShapes
 {
-    class Sqr
+    class Sqr2
     {
-        public int Side { get; set; }
-
+        public Rect quad { get; set; }
         public int Perimeter()
         {
-            return Side * 4;
+            return quad.Perimeter();
         }
         public int Area()
         {
-            return Side * Side;
+            return quad.Area();
         }
-        public Sqr(int s1)
+        public Sqr2(int s1)
         {
-            Side = s1;
+           quad = new Rect(s1, s1);
         }
     }
 }
